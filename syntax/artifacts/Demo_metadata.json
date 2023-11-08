@@ -6,85 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "myMemoryStr",
-						"type": "string"
-					}
-				],
-				"name": "demo",
-				"outputs": [],
+				"inputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "targetAddress",
-						"type": "address"
-					}
-				],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "myAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "myMapping",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myString",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "receiveFunds",
+				"name": "pay",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -92,17 +20,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "targetAddress",
+						"internalType": "address payable",
+						"name": "_to",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
 					}
 				],
-				"name": "transferTo",
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -121,7 +44,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"syntax/sting.sol": "Demo"
+			"syntax/events.sol": "Demo"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -135,12 +58,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"syntax/sting.sol": {
-			"keccak256": "0xd68de2dd1c5d96567c6e8860a9a0cba2f46ac6afe3dbe913984a760cd771a270",
+		"syntax/events.sol": {
+			"keccak256": "0x31c1f865a23672b28547f8d09d49996d8c064c97a1b5469158138711812a1514",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7540898352efa6edee7a0af01a895270f6f22e219da9fee986717e3a76c5688",
-				"dweb:/ipfs/QmRb6M43fGPyyKixyFz5rCVkxe7k7FCKnTvnZA9ie5Dhjb"
+				"bzz-raw://8673a45a5cf56310bebea3dbd9796460317dc7bd43c9ed36921f20f259e2b7ca",
+				"dweb:/ipfs/QmXsks4TShorjdYBEPyyDBYw8H5tkG6J75iGmsAHWm3ZBb"
 			]
 		}
 	},

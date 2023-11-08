@@ -6,32 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "demoDyArr",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "demoMemArr",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256[]"
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "len",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "totalPayments",
 						"type": "uint256"
 					}
 				],
@@ -41,20 +27,60 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_index",
 						"type": "uint256"
 					}
 				],
-				"name": "myDynamicArray",
+				"name": "getPayment",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "from",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "message",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Test.Payment",
 						"name": "",
-						"type": "uint256"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "pay",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -86,11 +112,11 @@
 	},
 	"sources": {
 		"syntax/enum.sol": {
-			"keccak256": "0x8251ea74977600a096a129ac9a060dde26c3b095a966e72b6892a53b1254ea45",
+			"keccak256": "0xfc287a0f7ed93be9e4397c9d5be1914fb2822cb775520a7dddfb556b73349f48",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1a185ba01177360c1d02b1447f093d231f1b39d42187bcc421ebf9bb97cbbe06",
-				"dweb:/ipfs/QmVJj66wugXoi85Y6thKpBkqjwLoDaBoJkSDpp1Y2BXKH4"
+				"bzz-raw://9566778bd61c61d60986b00789cca60858e68b685575334ce498afa141846339",
+				"dweb:/ipfs/QmcxyHBZsEZctNDwH1ZSju3LVG9Up5XpP6KQHis4DNTFfM"
 			]
 		}
 	},
