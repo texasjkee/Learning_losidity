@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8;
 
-contract Demo {
+contract Auc {
     
     mapping (address => uint) public myMapping;
     address public myAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
