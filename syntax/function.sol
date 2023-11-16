@@ -42,7 +42,3 @@ contract Demo {
        return amount * 3;
     }
 }
-
-
-
-
